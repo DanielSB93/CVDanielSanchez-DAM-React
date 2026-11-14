@@ -1,16 +1,61 @@
-# React + Vite
+# CV Daniel Sánchez Bartolomé — React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Currículum vitae interactivo desarrollado con **React** como práctica del ciclo de **Desarrollo de Aplicaciones Multiplataforma (DAM)**.
 
-Currently, two official plugins are available:
+🔗 **Ver online:** [cvdanielsanchezdamreact.vercel.app](https://cvdanielsanchezdamreact.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Descripción
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Aplicación de una sola página que muestra mi CV con:
 
-## Expanding the ESLint configuration
+- Cabecera con foto de perfil y datos de contacto
+- Hard Skills y Soft Skills
+- Idiomas con indicador de nivel por colores
+- Certificaciones
+- Sobre mí
+- Experiencia profesional, Educación y Voluntariado
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Toda la información está separada en **arrays y objetos de datos** al principio de `App.jsx`, y se pinta en pantalla con el método `map()`. Así el CV se puede modificar cambiando solo los datos, sin tocar la estructura.
+
+## Tecnologías
+
+- React
+- Vite
+- JavaScript (JSX)
+- CSS (Flexbox)
+- Despliegue en Vercel
+
+## Estructura del proyecto
+
+```
+src/
+├── assets/
+│   └── foto_daniel_sanchez.jpg   # Foto de perfil
+├── App.jsx                       # Componente principal: datos del CV y renderizado
+├── App.css                       # Estilos del CV
+└── main.jsx                      # Punto de entrada de la aplicación
+```
+
+## Ejecutar en local
+
+Requisitos: tener instalado [Node.js](https://nodejs.org/).
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/DanielSB93/CVDanielSanchez-DAM-React.git
+cd CVDanielSanchez-DAM-React
+
+# Instalar dependencias
+npm install
+
+# Arrancar el servidor de desarrollo
+npm run dev
+```
+
+Después abre en el navegador la dirección que aparece en la terminal (normalmente `http://localhost:5173`).
+
+## Autor
+
+**Daniel Sánchez Bartolomé** — Estudiante de DAM
